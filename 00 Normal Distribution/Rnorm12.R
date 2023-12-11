@@ -1,0 +1,7 @@
+data <- rnorm(10000)
+hist(data)
+plot(density(data))
+abline(v=-2, col="red")
+dnorm(0)
+pnorm(-2)
+qnorm(0.02275013)

@@ -1,0 +1,1 @@
+● Write a R program to list containing a vector, a matrix and a list and give names to the elements in the list. 

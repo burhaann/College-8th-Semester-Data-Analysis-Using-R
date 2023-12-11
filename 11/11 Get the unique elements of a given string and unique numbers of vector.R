@@ -1,0 +1,13 @@
+sentence <- ("Burhaann Doesn't Know Prog Prog Prog ramming")
+print("Unique elements:")
+print(unique(tolower(scan(text = sentence, what = "String"))))
+
+#Another way to get Unique Elements from a sentence
+sentence <- tolower(sentence)
+elements<-(strsplit(sentence,split = "\\s+"))
+print(unique(elements[[1]]))
+
+
+nums = c(123, 107, 123, 11, 11, 11, 45)
+print("Unique elements:")
+print(unique(nums))

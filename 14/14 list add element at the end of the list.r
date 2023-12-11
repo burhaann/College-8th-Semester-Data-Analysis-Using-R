@@ -1,0 +1,30 @@
+MixMasla = list(c("Burhaan", "Ahmad","Beigh"),
+                182106, 180915,
+                matrix(c(1,2,3,4,5,6,7,8,9),nrow=3,byrow=TRUE),
+                c(TRUE,FALSE,TRUE,TRUE, FALSE),
+                1.1,
+                list(c("IOT", "Optimization", "Graphics")),
+                list(c("Cyan","Olive","Orange"))
+                )
+print("Data of the list:")
+print(MixMasla)
+
+names(MixMasla) = c("Name",
+                    "Class Roll No.", "Exam Roll No.",
+                    "3x3 Matrix",
+                    "Logical Operators",
+                    "CGPA",
+                    "8th Semester Core Subjects",
+                    "Colors"
+                    )
+print("List with column names:")
+print(MixMasla)
+print('1st element:')
+print(MixMasla[1])
+print('2nd element:')
+print(MixMasla[2])
+
+#Adding an Element to the End of the List
+MixMasla[9] = "9th Element"
+names(MixMasla[9])="Last Element"
+print(MixMasla)

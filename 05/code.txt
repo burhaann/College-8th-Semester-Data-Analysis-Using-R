@@ -1,0 +1,22 @@
+Write a R program to get the first 10 Fibonacci numbers. 
+
+
+
+#Create a container for all 10 elements of the series.
+fib = rep(0, 10)
+num1 = 0 # first number
+num2 = 1 # second number
+i = 3
+fib[2] <- fib[3] <- 1
+
+while (i < length(fib)+1 ) {
+  nxt <- num1 + num2
+  fib[i] <- nxt
+  # update values
+  num1 = num2
+  num2 = nxt
+  i <- i + 1
+}
+
+print(paste("Fibonacci sequence: "))
+print(fib)

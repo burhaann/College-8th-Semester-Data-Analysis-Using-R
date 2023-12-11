@@ -1,0 +1,10 @@
+name <- readline(prompt="Input your name: ")
+rollno <-  182106L
+typeof(rollno)
+
+#Combine Function Creates a sequence of data elements
+#of similar types (vector)
+subjects <- c( "IOT" , "R" , "PYTHON" , "COMPUTER GRAPHICS" )
+
+#Listing Objects in Memory
+print(ls.str())

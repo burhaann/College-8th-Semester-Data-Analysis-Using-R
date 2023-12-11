@@ -1,0 +1,16 @@
+factorsOf = function(number) {
+  print(paste("The factors of ",number," are:"))
+  i <- 1
+  repeat {
+    if((number %% i) == 0){
+      print(i)
+    }
+    i = i+1
+    if (i > number){
+      break
+    }
+  }
+}
+factorsOf(1)
+factorsOf(9)
+factorsOf(5)

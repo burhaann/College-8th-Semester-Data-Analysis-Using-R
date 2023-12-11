@@ -1,0 +1,20 @@
+primeNumbers <- function(n) {
+  if (n >= 2) {
+    x = seq(2, n)
+    prime = c()
+    for (i in seq(2, n)) {
+      if (any(x == i)) {
+        prime = c(prime, i)
+        #A value in x will finally be false if i is Not a prime, else true.
+        y <- x %% i
+        x = c(x[y != 0], i)
+      }
+    }
+    return(prime)
+  }
+  else 
+  {
+    stop("Input number should be at least 2.")
+  }
+} 
+primeNumbers(10)
